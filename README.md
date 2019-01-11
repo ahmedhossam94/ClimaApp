@@ -1,44 +1,13 @@
-# Clima
-Learn to make iOS Apps with [The App Brewery](https://www.appbrewery.co) 📱 | Project Stub | (Swift 4.0/Xcode 9) - Clima App
+#CLIMA
 
-Beginner: Download the starter project files as .zip and extract the files to your desktop.
+This is an app that use your location And by using AlamoFire to make connection to open weather website to get the weather degree Data.
 
-Pro: Git clone to your Xcode projects folder.
+then by using SwiftyJson to analyse Json data 
 
-## Finished App
-![Finished App](https://github.com/londonappbrewery/Images/blob/master/Clima.gif)
+![alt text](https://github.com/ahmedhossam94/ClimaApp/blob/master/Clima/Images.xcassets/1.imageset/1.png?raw=true)
 
-## Fix for Cocoapods v1.0.1 and below
+Or you can enter your city or any city to get the weather
 
-```ruby
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['SWIFT_VERSION'] = '3.0'
-      config.build_settings['MACOSX_DEPLOYMENT_TARGET'] = '10.10'
-    end
-  end
-end
-```
+![alt text](https://github.com/ahmedhossam94/ClimaApp/blob/master/Clima/Images.xcassets/2.imageset/2.png?raw=true)
 
-## Fix for App Transport Security Override
-
-```XML
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>openweathermap.org</key>
-			<dict>
-				<key>NSIncludesSubdomains</key>
-				<true/>
-				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-			</dict>
-		</dict>
-	</dict>
-```
-
-
-Copyright © The App Brewery
 
